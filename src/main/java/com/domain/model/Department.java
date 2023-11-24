@@ -6,17 +6,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.domain.common.BaseModel;
 import com.domain.enums.DepartmentType;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -40,13 +36,5 @@ public class Department extends BaseModel implements Serializable {
 	@Enumerated(EnumType.STRING)
 	@Column(name = "type", nullable = true, length = 50)
 	private DepartmentType type;
-
-	@Column(name = "value", nullable = false, length = 30)
-	private String name;
-
-	@JsonIgnore
-	@ManyToOne(fetch = FetchType.LAZY, optional = true)
-	@JoinColumn(name = "employee_id", nullable = false)
-	private Employee employee;
 
 }

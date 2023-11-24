@@ -75,28 +75,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 	    Employee savedEmployee = repo.save(employee);
 	    return employeeMapper.toVo(savedEmployee);
 	}
-	
-//	@Override
-//	@Transactional
-//	public EmployeeVo add(EmployeeVo employeeVo) {
-//		Employee employee = employeeMapper.toEntity(employeeVo);
-//
-//		if (employeeVo.getPhones().isEmpty()) {
-//			employee.setPhones(null);
-//		} else {
-//			List<Phone> phones = new ArrayList<>();
-//			for (PhoneVo phone : employeeVo.getPhones()) {
-//				Phone p = new Phone();
-//				BeanUtils.copyProperties(phone, p);
-//				p.setEmployee(employee);
-//				phones.add(p);
-//			}
-//			employee.setPhones(phones);
-//		}
-//
-//		Employee savedEmployee = repo.save(employee);
-//		return employeeMapper.toVo(savedEmployee);
-//	}
 
 	@Override
 	@Transactional

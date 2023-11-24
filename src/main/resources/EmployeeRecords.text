@@ -1,0 +1,22 @@
+INSERT INTO public.employees_data
+(address, first_name, last_name, salary, status)
+VALUES('ERANDOL (SUB OFFICE), JALGAON, MAHARASHTRA (MH), India (IN), Pin Code:- 425109', 'Harshal', 'Wagh', 25032, 'ACTIVATED');
+
+
+INSERT INTO public.employees_data
+(address, first_name, last_name, salary, status)
+VALUES('SHIRUR PUNE (SUB OFFICE), PUNE, MAHARASHTRA (MH), India (IN), Pin Code:- 412210', 'Akshay', 'Pandare', 27060, 'DEACTIVATED');
+
+INSERT INTO public.employees_data
+(address, first_name, last_name, salary, status)
+VALUES('ALANDI DEVACHI (SUB OFFICE), PUNE, MAHARASHTRA (MH), India (IN), Pin Code:- 412105', 'Prathamesh', 'Kulkarni', 26541, 'ACTIVATED');
+
+
+INSERT INTO public.employees_data
+(address, first_name, last_name, salary, status)
+VALUES('SATARA (HEAD OFFICE), SATARA, MAHARASHTRA (MH), India (IN), Pin Code:- 415001', 'Rushikesh', 'Patil', 24512, 'DELETED');
+
+
+INSERT INTO public.employees_data
+(address, first_name, last_name, salary, status)
+VALUES('KHARADI (SUB OFFICE), Pune, MAHARASHTRA (MH), India (IN), Pin Code:- 411014', 'Ashok', 'Bikkad', 26487, 'ACTIVATED');

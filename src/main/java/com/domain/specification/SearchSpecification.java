@@ -8,8 +8,8 @@ import javax.persistence.criteria.Predicate;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 
-import com.domain.constants.GlobalConstants;
-import com.domain.constants.Utility;
+import com.domain.common.constant.GlobalConstants;
+import com.domain.common.utility.Utility;
 import com.domain.exception.ServiceException;
 import com.domain.model.Employee;
 

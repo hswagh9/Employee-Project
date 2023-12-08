@@ -8,5 +8,4 @@ import lombok.Data;
 public class DepartmentVo {
     private Long id;
     private DepartmentType type;
-    private String name;
 }

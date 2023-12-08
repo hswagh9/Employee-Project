@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.domain.constants.GlobalConstants;
+import com.domain.common.constant.GlobalConstants;
 import com.domain.enums.Status;
 import com.domain.response.entity.RestResponse;
 import com.domain.response.entity.RestStatus;
@@ -70,7 +70,7 @@ public class EmployeeController {
 		RestResponse<EmployeeVo> response = new RestResponse<>(employeeService.fetchById(id), restStatus);
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
-
+	
 	@Operation(summary = "Add new Employee")
 	@PostMapping
 	public ResponseEntity<RestResponse<EmployeeVo>> add(@Valid @RequestBody EmployeeVo employeeVo) {

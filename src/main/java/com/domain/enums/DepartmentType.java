@@ -6,9 +6,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum DepartmentType {
-	GOVERNMENT("Personal"), 
-	PRIVATE("Office"), 
-	BUSINESS("Neighbour"), 
+	SALES("Sales"), 
+	ACCOUNT("Account"), 
+	FINANCE("Finance"), 
 	OTHER("Other");
 
 	private String name;

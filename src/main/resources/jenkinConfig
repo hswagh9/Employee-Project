@@ -1,0 +1,19 @@
+@echo off
+
+REM Clean the workspace
+rmdir /s /q C:\ProgramData\Jenkins\.jenkins\workspace\Employee-Curd-Service-Pipeline-Dev
+
+REM Clone the GitHub repository
+git clone https://github.com/hswagh9/employee-curd-service.git C:\ProgramData\Jenkins\.jenkins\workspace\Employee-Curd-Service-Pipeline-Dev
+
+REM Change to the project directory
+cd C:\ProgramData\Jenkins\.jenkins\workspace\Employee-Curd-Service-Pipeline-Dev\employee-curd-service
+
+REM Build the project using Maven
+mvn clean install
+
+REM Run the Spring Boot application
+java -jar target/employee-curd-service.jar
+
+REM Exit with the appropriate status code
+exit /b 0

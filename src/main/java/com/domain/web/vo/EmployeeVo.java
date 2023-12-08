@@ -30,5 +30,7 @@ public class EmployeeVo {
 	private Status status;
 
 	private List<PhoneVo> phones;
+	
+	private DepartmentVo departments; 
 
 }
